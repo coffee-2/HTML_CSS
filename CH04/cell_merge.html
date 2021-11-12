@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀 병합하기</title>
+    <style>
+        table, th, tr, td {
+            border: solid 1px greenyellow;
+            border-collapse: separate;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h3> 오늘의 날씨 </h3> <!--셀 병합 : colspan - 좌우의 컬럼을 합친다.
+                                        rowspan - 위아래 컬럼을 합친다.-->
+    <table>
+        <tr> <th>지역</th> <th>현재기온</th> <th colspan="2">불쾌지수, 습도</th> <th>풍속</th> </tr>
+        <tr> <td rowspan="2">서울 / 경기</td> <td>6</td> <td>0</td> <td>48</td> <td>3.0</td> </tr>
+        <tr>     <td>4</td> <td>0</td> <td>41</td> <td>5.7</td> </tr>
+        <tr> <td>부산</td> <td>12</td> <td>3</td> <td>57</td>  <td>7.3</td> </tr>
+    </table>
+</body>
+</html>
