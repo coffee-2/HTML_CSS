@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼 (ul li)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        h3 {
+            margin: 20px 0 0 50px;
+        }
+        #mem_form {
+            width: 500px;
+            margin: 10px 0 0 50px;
+            font-family: "돋움";
+            font-size: 12px;
+            color: gray;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            border-top: solid 1px lightgray;
+            border-bottom: solid 1px lightgray;
+        }
+        .cols li {
+            display: inline-block;
+            margin-top: 5px;
+        }
+        .cols li.col1 {
+            width: 100px;
+            text-align: right;
+        }
+        .cols li.col2 {
+            width: 350px;
+        }
+        .cols li.col2 input.hp {
+            width: 45px;
+        }
+        .cols li.col2 input.email1 {
+            width: 90px;
+        }
+        #intro {
+            vertical-align: top;
+        }
+        #g { /* 성별 구분이 밑으로 내려가서 조정하기 위함 */
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h3> 가입양식 </h3>
+    <form action="#">
+        <ul id="mem_form">
+            <li>
+                <ul class="cols">
+                    <li class="col1">아이디 </li>
+                    <li class="col2"><input type="text"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">비밀번호 </li>
+                    <li class="col2"><input type="password"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">비밀번호 확인 </li>
+                    <li class="col2"><input type="password"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">이름 </li>
+                    <li class="col2"><input type="text"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">성별 </li>
+                    <li class="col2" id="g"><input type="radio" name="gender"> 남성</li>
+                    <li class="col2" id="g"><input type="radio" name="gender"> 여성</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">휴대전화 </li>
+                    <li class="col2">
+                        <select>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>017</option>
+                        </select> -
+                        <input type="text" class="hp"> - <input type="text" class="hp">
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">이메일 </li>
+                    <li class="col2"><input type="email" class="email1">@
+                        <select class="email2">
+                        <option>선택</option>
+                        <option>naver.com</option>
+                        <option>gmail.com</option>
+                        <option>daum.net</option>
+                        <option>hanmail.net</option>
+                    </select>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">취미 </li>
+                    <li class="col2">
+                        <input type="checkbox" name="h1"> 운동
+                        <input type="checkbox" name="h2"> 음악감상
+                        <input type="checkbox" name="h3"> 독서
+                        <input type="checkbox" name="h4"> 게임 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1" id="intro">자기소개 </li>
+                    <li class="col2"><textarea cols="35" rows="5"></textarea></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">파일첨부 </li>
+                    <li class="col2"><input type="file">* 2MB 첨부가능</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">&nbsp; </li>
+                    <li class="col2">
+                        <input type="reset" value="초기화" style="box-shadow: 3px 3px 4px gray; background-color: lightskyblue;"> &nbsp;
+                        <input type="submit" value="제출" style="box-shadow: 3px 3px 4px gray; background-color: lightskyblue;">
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

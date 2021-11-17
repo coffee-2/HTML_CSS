@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table_border</title>
+    <style>
+        table, tr, th, td {
+            border: solid 1px black;
+            border-collapse: collapse;
+            text-align: center;
+            margin-left: 15px;
+        }
+        #a, #d, #e, #f {
+            width: 98px;
+            background-color: rgb(229, 226, 226);
+        }
+        #b, #c {
+            width: 60px;
+            background-color: rgb(229, 226, 226);
+        }
+        .train {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h2>KTX 열차표 예매</h2>
+    <table>
+        <tr>
+            <th id="a">열차번호</th> <th id="b">출발</th> <th id="c">도착</th> <th id="d">특실</th> <th id="e">일반실</th> <th id="f">소요시간</th>
+        </tr>
+        <tr>
+            <td class="train">175</td> <td>서울<br>21:00</td> <td>부산<br>23:44</td> <td><img src="full.png"></td> <td><img src="full.png"></td> <td>02:44</td>
+        </tr>
+        <tr>
+            <td class="train">177</td> <td>서울<br>21:30</td> <td>부산<br>00:08</td> <td><img src="empty.png"></td> <td><img src="empty.png"></td> <td>02:38</td>
+        </tr>
+        <tr>
+            <td class="train">179</td> <td>서울<br>22:00</td> <td>부산<br>00:42</td> <td><img src="empty.png"></td> <td><img src="empty.png"></td> <td>02:42</td>
+        </tr>
+    </table>
+</body>
+</html>
