@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입정보</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            padding: 20px 0 0 30px;
+        }
+        h3 {
+            border-bottom: solid 2px rgb(90, 90, 175);
+            padding-bottom: 8px;
+            font-size: 15px;
+            font-family: "돋움";
+        }
+        table {
+            font-size: 12px;
+            display: inline;
+        }
+        td {
+            color: rgb(116, 115, 115);
+            font-family: "돋움";
+        }
+        .menu {
+            text-align: left;
+            padding-left: 100px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-weight: bold;
+            color: black;
+            font-family: "맑은 고딕";
+        }
+        .input {
+            margin-left: 60px;
+            text-align: left;
+        }
+        .id {
+            width: 100px;
+            margin-left: 45px;
+        }
+        button {
+            background-color: rgb(76, 76, 158);
+            color: white;
+            padding: 0 3px 0 3px;
+        }
+        .pwd {
+            width: 100px;
+            margin-left: 35px;
+        }
+        .pwd2 {
+            width: 100px;
+            margin-left: 7px;
+        }
+        .name {
+            width: 100px;
+            margin-left: 60px;
+        }
+        .year {
+            width: 60px;
+            margin-left: 35px;
+        }
+        .md {
+            width: 20px;
+        }
+        .email {
+            width: 100px;
+            margin-left: 45px;
+        }
+        .phone1 {
+            width: 30px;
+            margin-left: 35px;
+        }
+        .phone2 {
+            width: 50px;
+        }
+        .job {
+            margin-left: 70px;
+        }
+        .p {
+            margin-left: 20px;
+        }
+        o {
+            padding-left: 350px;
+        }
+        b {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>■ 회원가입정보</h3>
+            <table>
+                <tr> 
+                    <td class="menu">º 아이디</td> <td class="input"><input type="text" class="id">&nbsp;<button>중복확인</button> &nbsp; 영문, 숫자 조합으로 4~12자 이내</td> 
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td class="menu">º 비밀번호</td> <td class="input"><input type="password" class="pwd">&nbsp;영문, 숫자 조합으로 4~12자 이내</td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td class="menu">º 비밀번호 확인</td> <td class="input"><input type="password" class="pwd2"></td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td class="menu">º 이름</td> <td class="input"><input type="text" class="name"></td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td class="menu">º 생년월일</td> <td class="input"><input type="text" class="year">&nbsp;년 &nbsp; <input type="text" class="md">&nbsp;월 &nbsp; <input type="text" class="md">&nbsp;일 &nbsp;
+                    <input type="radio" name="d">음력 &nbsp; <input type="radio" name="d">양력
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td class="menu">º 이메일</td> <td class="input"><input type="text" class="email"></td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td class="menu">º 휴대전화</td> <td class="input"><input type="text" class="phone1">&nbsp;-&nbsp;<input type="text" class="phone2">&nbsp;-&nbsp;<input type="text" class="phone2"></td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td class="menu">직업</td> <td class="input">
+                        <select class="job">
+                            <option>직업선택</option>
+                            <option>학생</option>
+                            <option>공무원</option>
+                            <option>직장인</option>
+                            <option>무직</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td class="menu">영어수강목적</td> <td class="input">
+                        <input type="checkbox" name="purpose1" class="p">&nbsp;시험대비
+                        <input type="checkbox" name="purpose2">&nbsp;업무상
+                        <input type="checkbox" name="purpose3">&nbsp;취미
+                        <input type="checkbox" name="purpose4">&nbsp;기타
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <br>
+        <o><input type="reset" value="가입취소" class="b"> <input type="submit" value="가입완료" class="b"></o>
+    </div>
+</body>
+</html>
