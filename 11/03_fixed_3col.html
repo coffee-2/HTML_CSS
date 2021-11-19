@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고정형 2단 레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 980px;
+            margin: 0 auto;
+        }
+        header {
+            height: 80px;
+            background-color: tomato;
+        }
+        #left {
+            width: 200px;
+            height: 300px;
+            float: left;
+            background-color: turquoise;
+        }
+        #right {
+            width: 200px;
+            height: 300px;
+            float: right;
+            background-color: deeppink;
+        }
+        main {
+            width: 580px;
+            height: 300px;
+            float: left;
+            background-color: yellow;
+        }
+        footer {
+            height: 80px;
+            clear: both;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            header
+        </header>
+        <aside id="left">
+            left aside
+        </aside>
+        <main>
+            main
+        </main>
+        <aside id="right">
+            right aside
+        </aside>
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
+</html>

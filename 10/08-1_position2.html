@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position을 relative로 설정</title>
+    <!-- 현재 위치를 기준점 삼아 이동 -->
+    <style>
+        * {margin: 0; padding: 0;}
+        #p {
+            width: 500px;
+            height: 300px;
+            border: solid 1px black;
+            margin: 50px 0 0 50px;
+        }
+        #b1, #b2, #b3 {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+        }
+        #b1 {background-color: darkkhaki;}
+        #b2 {
+            background-color: darkolivegreen;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        #b3 {background-color: darkturquoise;}
+    </style>
+</head>
+<body>
+    <div id="p">
+        <div id="b1">Box A</div>
+        <div id="b2">Box B</div>
+        <div id="b3">Box C</div>
+    </div>
+</body>
+</html>
