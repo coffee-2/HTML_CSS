@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가시성 속성과 디스플레이 속성 비교</title>
+    <style>
+        .v1 {
+            visibility: hidden; border: dotted 1px red;
+        }
+        .v2 {
+            visibility: visible; border: dotted 1px red; display: inline-block;
+        }
+        .v3 {
+            display: none; border: dotted 1px red;
+        }
+        #clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="v1"> <!-- 보이지 않도록 설정(공간O) -->
+        <img src="img/pic1.jpg">
+    </div>
+    <div class="v2"> 
+        <img src="img/pic1.jpg">
+    </div>
+
+    <div id="clear"></div>
+
+    <div class="v3"> <!-- 보이지 않도록 설정(공간X) -->
+        <img src="img/pic1.jpg">
+    </div>
+    <div class="v2"> 
+        <img src="img/pic1.jpg">
+    </div>
+</body>
+</html>

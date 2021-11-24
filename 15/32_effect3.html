@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumping Ball</title>
+    <style>
+        @keyframes bounce {
+            from, to{bottom: 0px; -o-animation-timing-function: ease-out;}
+            50% {bottom: 200px; -o-animation-timing-function: ease-in;}
+        }
+        div {
+            position: absolute; width: 20px; height: 20px; 
+            border-radius: 15px;
+            animation-name: bounce; animation-iteration-count: infinite;
+        }
+        #b1 {left: 10px; background: red; animation-duration: 5s;}
+        #b2 {left: 50px; background: blue; animation-duration: 4.95s;}
+        #b3 {left: 90px; background: saddlebrown; animation-duration: 4.9s;}
+        #b4 {left: 130px; background: silver; animation-duration: 4.85s;}
+        #b5 {left: 170px; background: springgreen; animation-duration: 4.8s;}
+    </style>
+</head>
+<body>
+    <div id="b1"></div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <div id="b4"></div>
+    <div id="b5"></div>
+</body>
+</html>
