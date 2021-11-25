@@ -1,0 +1,12 @@
+<script>
+    var x = 0;
+    var sum = 0;
+
+    for(x=1; x<101; x++) {
+        if(x%3 != 0) continue;
+        sum += x;
+        document.write(x+" ");  
+    }
+    document.write("<p/>");
+    document.write("1에서 100까지의 3의 배수의 합 : "+sum);
+</script>

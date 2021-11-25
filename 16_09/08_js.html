@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수를 재선언 했을 때 데이터 값의 변화</title>
+</head>
+<body>
+    <script>
+        stdName = "박상준";
+        comGrade = 96;
+        var stdName;
+        var comGrade;
+
+        //stdName= 90; comGrade="박상준";
+
+        document.write("학생 이름 : "+stdName+" 입니다. <p/>");
+        document.write("컴퓨터 점수는 "+comGrade+"점 입니다. <p/>");
+    </script>
+</body>
+</html>
