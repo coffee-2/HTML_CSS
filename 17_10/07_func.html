@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서로 다른 변수로 같은 함수의 반환값 출력</title>
+</head>
+<body>
+    <script>
+        function add(x,y) {
+            return x+y;
+        }
+
+        var calSum = add;
+        var addUp = add;
+
+        document.write("결과 값 : "+casSum(5, 10) + "<p/>");
+        document.write("결과 값 : "+addUp(3, 20) + "<p/>");
+    </script>
+</body>
+</html>
