@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면구현_UI구현_박상준</title>
+    <style>
+        * {box-sizing: border-box; margin: 0; padding: 0;}
+
+        ul {
+            list-style-type: none;
+        }
+        body {
+            font-size: 100%;
+        }
+        .clear {
+            clear: both;
+        }
+        [class*="c_"] {
+            width: 100%;
+        }
+        @media only screen and (max-width: 600px) {
+            nav {
+          padding: 0;
+        }
+        nav ul li {
+          width: 100%;
+          display: block;
+        }
+        }
+        header {
+            text-align: center;
+            height: 150px;
+            background-color: blue;
+        }
+        header h1 {
+            color: white; 
+            font-size: 45px;
+            padding-top: 10px;
+        }
+        header nav {
+            background-color: rgb(185, 179, 179);
+            color: white;
+            height: 60px;
+            margin-top: 10px;
+            padding-bottom: 70px;
+        }
+        header nav ul {
+            width: 100%;
+        }
+        header nav a:link {text-decoration: none; color: white;}
+        header nav a:visited {color: white;}
+        header nav li {
+            display: inline-block;
+            padding: 15px 70px 0 70px;
+            font-size: 25px;
+        }
+        main {
+            background-color: rgb(230, 225, 225);
+            text-align: center;
+            width: 100%;
+            height: 750px;
+        }
+        #main_1 {
+            font-size: 40px;
+            font-weight: bold;
+            padding-top: 3%;
+        }
+        #main_1 a:link {text-decoration: none; color: black;}
+        #main_1 a:visited {color: black;}
+
+        table, tr, td {
+            border: double 2px rgb(172, 161, 161);
+        }
+        table {
+            margin-left: 14%;
+            margin-top: 3%;
+            width: 70%;
+            height: 400px
+        }
+        #col1 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #col2 {
+            background: rgb(250,250,250);
+            background: linear-gradient(90deg, rgba(250,250,250,1) 0%, 
+            rgba(216,220,227,1) 50%, rgba(200,209,210,1) 100%);
+            border-radius: 10px;
+            float: left;
+            width: 340px;
+            height: 50px;
+            font-size: 30px;
+        }
+        footer {
+            background: blue;
+            background: linear-gradient(90deg, blue 0%,
+             rgb(58, 108, 194) 46%, rgb(125, 128, 172)100%);
+            color: white;
+            height: 70px;
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>쇼핑몰 회원관리 VER 1.0</h1>
+        <div class="clear"></div>
+        <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">회원등록</a></li>
+                <li><a href="#">회원목록조회/수정</a></li>
+                <li><a href="#">회원매출조회</a></li>
+                <li><a href="#">홈으로</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div id="main_1"><a href="index.html">쇼핑몰 회원 등록</a></div>
+        <section>
+            <table>
+                <tr>
+                    <td id="col1">회원번호(자동발생)</td> <td><input type="text" id="col2"></td>
+                </tr>
+                <tr>
+                    <td id="col1">회원성명</td> <td><input type="text" id="col2"></td>
+                </tr>
+                <tr>
+                    <td id="col1">회원주소</td> <td><input type="text" id="col2"></td>
+                </tr>
+                <tr>
+                    <td id="col1">가입일자</td> <td><input type="text" id="col2"></td>
+                </tr>
+                <tr>
+                    <td id="col1">고객등급[A:VIP, B:일반, C:직원]</td> 
+                    <td>
+                        <select id="col2">
+                            <option>A : VIP</option>
+                            <option>B : 일반</option>
+                            <option>C : 직원</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="col1">도시코드</td> <td><input type="text" id="col2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="col1">등록</button> <button id="col1">조회</button>
+                    </td> 
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <div class="clear"></div>
+
+    <footer>
+            HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea
+    </footer>
+</body>
+</html>
