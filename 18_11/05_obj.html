@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동차 객체의 속도 제어</title>
+</head>
+<body>
+    <p id="speedup"></p>
+    <p id="speeddown"></p>
+
+    <script>
+        var car = {
+            name : 'GV80', speed : 100, color : 'black',
+            up : function(a) {
+                var sp = this.speed + a;
+                if(sp>=300) {
+                    sp = 50;
+                    return sp;
+                }
+                else {return sp;}
+            },
+            down : function(a) {
+                var sp = this.speed - a;
+                if(sp<0) {
+                    sp = 0;
+                    return sp;
+                }
+                else {return sp;}
+            }
+        };
+
+        var up = document.getElementById("speedup");
+        up.textContent = '속도증가 : ' + car.up(100);
+
+        var down = document.getElementById("speeddown");
+        down.textContent = '속도감소 : ' + car.down(30);
+    </script>
+</body>
+</html>

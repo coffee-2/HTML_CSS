@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수를 이용하는 방법</title>
+</head>
+<body>
+    <p id="carname"></p>
+    <p id="carspeed"></p>
+    <p id="carcolor"></p>
+
+    <script>
+        var car = new Object();
+        car.name = 'GV80';
+        car.speed = 100;
+        car.color = 'grey';
+        car.speedup = function() {
+            return this.speed + 10;
+        }
+        car.speeddown = function() {
+            return this.speed - 10;
+        }
+
+        var cname = document.getElementById("carname");
+        cname.textContent = '자동차 이름 : '+car.name;
+
+        var cspeed = document.getElementById("carspeed");
+        cspeed.textContent = '자동차 속도 : '+car['speed'];
+
+        var ccolor = document.getElementById("carcolor");
+        ccolor.textContent = '자동차 색깔 : '+car.color;
+    </script>
+</body>
+</html>

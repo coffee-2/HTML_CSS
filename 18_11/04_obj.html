@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동차 객체를 생성해서 속도 조절</title>
+</head>
+<body>
+    <p id="upspeed">내용 1</p>
+    <p id="downspeed">내용 2</p>
+
+    <script>
+        var car = {
+            name : 'GV80', speed : 50, color : "black",
+            speedup : function() {
+                return this.speed + 10;
+            },
+            speeddown : function() {
+                var low = this.speed - 10;
+                return low;
+            }
+        }
+
+        var up = document.getElementById("upspeed");
+        up.textContent = '속도증가 : ' + car.speedup();
+
+        var down = document.getElementById("downspeed");
+        down.textContent = '속도감소 : ' + car.speeddown();
+    </script>
+</body>
+</html>

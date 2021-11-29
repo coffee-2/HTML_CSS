@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 추가 및 삭제</title>
+</head>
+<body>
+    <p>[Park's Car]</p>
+    <p id="name"></p>
+    <p id="color"></p>
+    <p id="speed"></p>
+
+    <p>[Kim's Car]</p>
+    <p id="name1"></p>
+    <p id="color1"></p>
+    <p id="speed1"></p>
+    <p id="price"></p>
+
+
+    <script>
+        function Car(name, color, speed) {
+            this.name = name;
+            this.color = color;
+            this.speed = speed;
+            this.speedup = function () {
+                return this.speed + 10;
+            }
+            this.speeddown = function () {
+                return this.speed - 10;
+            }
+        }
+        var Parkcar = new Car('GV80', 'gray', 100);
+        var Kimcar = new Car('Sonata', 'black', 70);
+        Kimcar.price = '4천만원';
+        delete Kimcar.color;
+
+        var cname = document.getElementById("name");
+        cname.textContent = '자동차 이름 : ' + Parkcar.name;
+        var ccolor = document.getElementById("color");
+        ccolor.textContent = '자동차 색깔 : ' + Parkcar.color;
+        var cspeed = document.getElementById("speed");
+        cspeed.textContent = '자동차 속도 : ' + Parkcar.speed;
+
+        var cname = document.getElementById("name1");
+        cname.textContent = '자동차 이름 : ' + Kimcar.name;
+        var ccolor = document.getElementById("color1");
+        ccolor.textContent = '자동차 색깔 : ' + Kimcar.color;
+        var cspeed = document.getElementById("speed1");
+        cspeed.textContent = '자동차 속도 : ' + Kimcar.speed;
+        var cprice = document.getElementById("price");
+        cprice.textContent = '자동차 가격 : ' + Kimcar.price;
+    </script>
+</body>
+</html>

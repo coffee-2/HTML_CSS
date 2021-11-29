@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 속성과 메소드 모두 사용</title>
+    <style>
+        p {border: solid 1px rebeccapurple;}
+    </style>
+</head>
+<body>
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+
+    <script>
+        var car = {
+            name : 'GV80', speed : 50, color: 'black',
+            start : function() {
+                return this.speed + 10;
+            }
+        }
+
+        var cname = document.getElementById("carname");
+        cname.textContent = car.name;
+
+        var ccolor = document.getElementById("carcolor").textContent = car.color;
+        ccolor.textContent = car.color;
+
+        var cspeed = document.getElementById("carspeed");
+        cspeed.textContent = car.speed;
+        cspeed.textContent = car.start();
+
+    </script>
+</body>
+</html>
