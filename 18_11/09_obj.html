@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 배열 구조</title>
+</head>
+<body>
+    <p>[Car 1]</p>
+    <p id="data10">요소1</p>
+    <p id="data20">요소1</p>
+    <p id="data30">요소1</p>
+
+    <p>[Car 2]</p>
+    <p id="data11">요소2</p>
+    <p id="data21">요소2</p>
+    <p id="data31">요소2</p>
+
+    <p>[Car 3]</p>
+    <p id="data12">요소3</p>
+    <p id="data22">요소3</p>
+    <p id="data33">요소3</p>
+
+    <script>
+        var car = [
+            {name : 'Sonata', color : 'white', speed : 100},
+            {name : 'Avante', color : 'black', speed : 70},
+            {name : 'G90', color : 'gray', speed : 150}
+        ]
+        for(var i=0; i<3; i++) {
+            var cname = document.getElementById("data1"+i);
+            cname.textContent = '자동차 이름 : '+car[i].name;
+            var ccolor = document.getElementById("data2"+i);
+            ccolor.textContent = '자동차 색깔 : '+car[i].color;
+            var cspeed = document.getElementById("data3"+i);
+            cspeed.textContent = '자동차 속도 : '+car[i].speed;
+        }
+    </script>
+</body>
+</html>

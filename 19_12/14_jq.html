@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#out").click(function() {
+                $("img").fadeOut("slow");
+            });
+            $("#in").click(function() {
+                $("img").fadeIn("fast");
+            });
+            $("#toggle").click(function() {
+                $("img").fadeToggle("slow");
+            });
+            $("#to50").click(function() {
+                $("img").fadeTo("slow", 0.5);
+            });
+            $("#to10").click(function() {
+                $("img").fadeTo("slow", 0.1);
+            });
+            $("#to100").click(function() {
+                $("img").fadeTo("slow", 1.0);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="out">fadeout</button>
+    <button id="in">fadein</button>
+    <button id="toggle">toggle</button>
+    <button id="to50">opacity 50%</button>
+    <button id="to10">opacity 10%</button>
+    <button id="to100">opacity 100%</button>
+    <p></p>
+    <img name="pic1" src="img/pic1.jpg">
+</body>
+</html>

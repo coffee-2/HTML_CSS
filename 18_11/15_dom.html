@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 객체를 생성하여 요소(태그) 추가</title>
+</head>
+<body>
+    <script>
+        function add() {
+            var header = document.createElement('h3');
+            var textnod = document.createTextNode('내 이름은 박상준 입니다.');
+
+            header.appendChild(textnod);
+            document.body.appendChild(header);
+        }
+    </script>
+
+    <a href="#" onclick="add()">당신의 이름은?</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 객체 활용</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+
+    <script>
+        document.getElementById("d1").innerHTML = new Date();
+        document.getElementById("d2").innerHTML = new Date(1491803527400);
+        document.getElementById("d3").innerHTML = new Date("November 30, 2021 12:16:47");
+        document.getElementById("d4").innerHTML = new Date(2021, 12, 15, 19, 30, 00);
+    </script>
+</body>
+</html>

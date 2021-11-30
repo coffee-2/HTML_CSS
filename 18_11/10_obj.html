@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 배열 (2차원 배열)</title>
+</head>
+<body>
+    <p id="car"></p>
+
+    <p>[ Car 1 ]</p>
+    <p id="car0"></p>
+    <p>[ Car 2 ]</p>
+    <p id="car1"></p>
+    <p>[ Car 3 ]</p>
+    <p id="car2"></p>
+
+    <script>
+        var car = new Array(
+            ['Sonata', 'blue', 100],
+            ['Avante', 'white', 70],
+            ['G80', 'black', 120]
+        )
+        var cname = document.getElementById("car");
+        cname.textContent = "car[2][1] : "+car[2][1];
+        for(var i=0; i<3; i++) {
+            var cname = document.getElementById("car"+i);
+            cname.textContent = car[i];
+        }
+    </script>
+</body>
+</html>
